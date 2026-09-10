@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Official Friendly Meeting Proposal 📝</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffeef8 0%, #e8f4ff 50%, #fffbe8 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(255, 105, 180, 0.25);
+    max-width: 620px;
+    width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+    position: relative;
+    border: 4px dashed #ffb6d9;
+    animation: wiggle 6s ease-in-out infinite;
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-0.5deg); }
+    50% { transform: rotate(0.5deg); }
+  }
+  .stamp {
+    display: inline-block;
+    background: #ff6fa5;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    transform: rotate(-3deg);
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  h1 {
+    color: #d63384;
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  .name {
+    font-size: 2.4rem;
+    color: #8b5cf6;
+    text-shadow: 2px 2px 0 #ffe0f0;
+    display: block;
+    margin: 6px 0 20px;
+  }
+  .intro { color: #555; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px; }
+  .options {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .option {
+    flex: 1;
+    min-width: 220px;
+    border-radius: 20px;
+    padding: 22px 18px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 3px solid transparent;
+  }
+  .option:hover { transform: translateY(-6px) scale(1.03); }
+  .option.selected { border-color: #ff6fa5; box-shadow: 0 10px 25px rgba(255,111,165,0.3); }
+  .meet { background: linear-gradient(135deg, #fff0f6, #ffe3ef); }
+  .call { background: linear-gradient(135deg, #f3e8ff, #e9d5ff); }
+  .option .emoji { font-size: 2.5rem; display: block; margin-bottom: 8px; }
+  .option h3 { color: #444; margin-bottom: 6px; }
+  .option p { color: #777; font-size: 0.9rem; line-height: 1.5; }
+  .call-warning {
+    background: #fff8e1;
+    border-left: 5px solid #ffc107;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: #7a5c00;
+    text-align: left;
+    margin-bottom: 28px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  button {
+    font-family: inherit;
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 15px 38px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .yes { background: linear-gradient(135deg, #ff6fa5, #ff9e6d); color: white; box-shadow: 0 8px 20px rgba(255,111,165,0.4); }
+  .yes:hover { transform: scale(1.08); }
+  .no { background: #eee; color: #999; position: relative; }
+  .response {
+    display: none;
+    margin-top: 26px;
+    background: #e8fff1;
+    border: 3px dashed #6ddba3;
+    border-radius: 18px;
+    padding: 22px;
+    color: #1d7a4f;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .fineprint { margin-top: 22px; font-size: 0.75rem; color: #aaa; }
+  .float-emoji {
+    position: fixed;
+    font-size: 1.6rem;
+    opacity: 0.35;
+    pointer-events: none;
+    animation: floatUp linear infinite;
+  }
+  @keyframes floatUp {
+    from { transform: translateY(110vh) rotate(0deg); }
+    to { transform: translateY(-10vh) rotate(360deg); }
+  }
+  @media (max-width: 520px) {
+    .card { padding: 36px 22px; }
+    h1 { font-size: 1.5rem; }
+    .name { font-size: 1.9rem; }
+  }
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<span class="float-emoji" style="left:5%;  animation-duration:14s;">🧋</span>
+<span class="float-emoji" style="left:15%; animation-duration:18s; animation-delay:2s;">🎈</span>
+<span class="float-emoji" style="left:30%; animation-duration:16s; animation-delay:5s;">☕</span>
+<span class="float-emoji" style="left:55%; animation-duration:20s; animation-delay:1s;">🍕</span>
+<span class="float-emoji" style="left:70%; animation-duration:15s; animation-delay:4s;">🎵</span>
+<span class="float-emoji" style="left:85%; animation-duration:17s; animation-delay:3s;">🫶</span>
+<span class="float-emoji" style="left:95%; animation-duration:13s; animation-delay:6s;">🌮</span>
+
+<div class="card">
+  <div class="stamp">⭐ 100% PLATONIC ⭐</div>
+
+  <h1>An Extremely Official Proposal To</h1>
+  <span class="name">Shusma Nepali</span>
+
+  <p class="intro">
+    Hi Shusma! 👋 You seem cool, so this is a formal (but not <em>too</em> formal)
+    application for a <strong>friendly meeting</strong>. Location of your choice —
+    anywhere on Earth (or nearby). Or, if you prefer, a phone call where you
+    actually stay on the line this time. 😏
+  </p>
+
+  <div class="options">
+    <div class="option meet" onclick="pickOption(this, 'meet')">
+      <span class="emoji">🧋</span>
+      <h3>Option A: Friendly Meetup</h3>
+      <p>You pick the place — café, park, or a random bench. My treat (probably).</p>
+    </div>
+    <div class="option call" onclick="pickOption(this, 'call')">
+      <span class="emoji">📱</span>
+      <h3>Option B: Phone Call</h3>
+      <p>A conversation on call. Revolutionary concept, I know.</p>
+    </div>
+  </div>
+
+  <div class="call-warning">
+    <span style="font-size:1.6rem;">⚠️</span>
+    <span><strong>Important safety notice:</strong> Statistics show that Shusma has a 100% success rate of escaping phone calls by "suddenly having to go." Please select responsibly.</span>
+  </div>
+
+  <div class="btn-row">
+    <button class="yes" onclick="sayYes()">Yes, let's do it! 🎉</button>
+    <button class="no" id="noBtn" onclick="tryNo()">No</button>
+  </div>
+
+  <div class="response" id="responseBox"></div>
+
+  <p class="fineprint">
+    * Not a date. This document contains zero (0) romantic intentions.
+    Side effects may include: laughter, good conversation, and an empty coffee cup.
+  </p>
+</div>
+
+<script>
+  const noBtn = document.getElementById('noBtn');
+  const responseBox = document.getElementById('responseBox');
+  const noTexts = ["No", "Are you sure? 🥺", "Really really sure?", "The call won't run away, promise", "Last chance...", "Okay I'll just hide now 🙈"];
+  let noCount = 0;
+  let chosen = null;
+
+  function pickOption(el, type) {
+    document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+    el.classList.add('selected');
+    chosen = type;
+  }
+
+  function tryNo() {
+    noCount++;
+    if (noCount < noTexts.length) {
+      noBtn.textContent = noTexts[noCount];
+      noBtn.style.transform = `translate(${(Math.random()-0.5)*80}px, ${(Math.random()-0.5)*40}px)`;
+    } else {
+      noBtn.style.display = 'none';
+    }
+  }
+
+  const YOUR_EMAIL = "kevaldoshi27@gmail.com";
+
+  function sendEmailToKeval(choice) {
+    // Free service: delivers the answer straight to your Gmail. No password, no server.
+    fetch("https://formsubmit.co/ajax/" + YOUR_EMAIL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: "🎉 Shusma said YES on your website!",
+        answer: "YES",
+        choice: choice === "meet" ? "Option A: Friendly Meetup 🧋 (she wants to meet!)"
+              : choice === "call" ? "Option B: Phone Call 📱 (she is NOT running away this time!)"
+              : "She said YES but hasn't picked an option yet 👀",
+        message: "Shusma accepted the friendly meeting proposal on your website. This is NOT a date (allegedly).",
+        _template: "table"
+      })
+    }).then(function(r){ return r.json(); }).then(function(data){
+      console.log("Email sent to Keval!", data);
+    }).catch(function(err){
+      console.log("Email failed (tell her to just text you too!)", err);
+    });
+  }
+
+  function sayYes() {
+    sendEmailToKeval(chosen);
+    let msg;
+    if (chosen === 'call') {
+      msg = "🎉 You chose the CALL option! Bold move.<br><br>" +
+            "Don't worry — this time the call will not be able to run away, because YOU are the one picking it up. " +
+            "Keval has been <strong>automatically notified by carrier pigeon (email)</strong> 🐦📧";
+    } else if (chosen === 'meet') {
+      msg = "🎉 Excellent choice! You picked the MEETUP option!<br><br>" +
+            "Please proceed to select any location on the planet. " +
+            "Keval has been <strong>automatically notified by carrier pigeon (email)</strong> 🐦📧";
+    } else {
+      msg = "🎉 You said YES!<br><br>Keval has been <strong>automatically notified by email</strong> 🐦📧. " +
+            "Now kindly also tap Option A or Option B above so we know what we're working with. 👀";
+    }
+    msg += "<br><br><small>ps: if the pigeon gets lost, just text him too 😄</small>";
+    responseBox.innerHTML = msg;
+    responseBox.style.display = 'block';
+    responseBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    confetti();
+  }
+
+  function confetti() {
+    const emojis = ['🎉','🎊','✨','🧋','🫶','⭐'];
+    for (let i = 0; i < 24; i++) {
+      const e = document.createElement('span');
+      e.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+      e.style.cssText = `position:fixed; left:${Math.random()*100}vw; top:-40px; font-size:${1+Math.random()}rem; pointer-events:none; z-index:999; transition: all ${2+Math.random()*2}s ease-in;`;
+      document.body.appendChild(e);
+      setTimeout(() => { e.style.top = '110vh'; e.style.transform = `rotate(${Math.random()*720-360}deg)`; }, 50);
+      setTimeout(() => e.remove(), 4500);
+    }
+  }
+</script>
+</body>
+</html>
